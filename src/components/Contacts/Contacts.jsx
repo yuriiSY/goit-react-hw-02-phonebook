@@ -68,7 +68,9 @@ class Contacts extends Component {
     const contacts = this.getFilteredList();
     return (
       <div>
+        <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
+        <h2>Contacts</h2>
         <Filter onChange={this.changeFilter} />
         <ContactList items={contacts} deleteContact={this.deleteContact} />
       </div>
